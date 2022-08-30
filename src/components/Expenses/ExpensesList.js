@@ -5,7 +5,7 @@ import './ExpensesList.css';
 
 const ExpensesList = (props) => {
     if (props.items.length === 0) {
-        return <h2 className='expenses-list__fallback'>Found No Expenses!</h2>
+        return <h2 className='expenses-list__fallback'>Oops! No Expenses Found!</h2>
     };
 
     return (
@@ -17,9 +17,9 @@ const ExpensesList = (props) => {
                     amount={expense.amount} 
                     date={expense.date} 
                 />
-            ))};
+            ))}
         </ul>
     )
 }
 
-export default ExpensesList
+export default ExpensesList;
